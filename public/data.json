@@ -1,0 +1,81 @@
+// [
+//     {
+//       "bookId": 1,
+//       "bookName": "1984",
+//       "author": "George Orwell",
+//       "image": "https://i.postimg.cc/7YNLg13L/bookimg1.jpg",
+//       "review": "A haunting portrayal of a dystopian society where Big Brother watches your every move. Orwell's prophetic vision is chilling and thought-provoking.",
+//       "totalPages": 328,
+//       "rating": 4.5,
+//       "category": "Fiction",
+//       "tags": ["Dystopian", "Political"],
+//       "publisher": "Penguin Books",
+//       "yearOfPublishing": 1949
+//     },
+//     {
+//       "bookId": 2,
+//       "bookName": "To Kill a Mockingbird",
+//       "author": "Harper Lee",
+//       "image": "https://i.postimg.cc/LXf9hj42/bookimg2.jpg",
+//       "review": "A timeless classic that tackles themes of racial injustice and moral growth through the eyes of a young girl. Harper Lee's masterpiece remains relevant today.",
+//       "totalPages": 336,
+//       "rating": 4.8,
+//       "category": "Fiction",
+//       "tags": ["Coming-of-age", "Legal drama"],
+//       "publisher": "J. B. Lippincott & Co.",
+//       "yearOfPublishing": 1960
+//     },
+//     {
+//       "bookId": 3,
+//       "bookName": "The Great Gatsby",
+//       "author": "F. Scott Fitzgerald",
+//       "image": "https://i.postimg.cc/sDKVBjzQ/bookimg3.jpg",
+//       "review": "Fitzgerald's tale of the Jazz Age captures the essence of the American Dream and its disillusionment. A poignant exploration of wealth, love, and identity.",
+//       "totalPages": 180,
+//       "rating": 4.3,
+//       "category": "Fiction",
+//       "tags": ["Romance", "Tragedy"],
+//       "publisher": "Charles Scribner's Sons",
+//       "yearOfPublishing": 1925
+//     },
+//     {
+//       "bookId": 4,
+//       "bookName": "The Catcher in the Rye",
+//       "author": "J.D. Salinger",
+//       "image": "https://i.postimg.cc/nz8Z8M45/bookimg4.jpg",
+//       "review": "Holden Caulfield's journey through adolescence is both poignant and rebellious. Salinger captures the angst and alienation of youth with remarkable authenticity.",
+//       "totalPages": 224,
+//       "rating": 4.2,
+//       "category": "Fiction",
+//       "tags": ["Coming-of-age", "Literary"],
+//       "publisher": "Little, Brown and Company",
+//       "yearOfPublishing": 1951
+//     },
+//     {
+//       "bookId": 5,
+//       "bookName": "Harry Potter and the Sorcerer's Stone",
+//       "author": "J.K. Rowling",
+//       "image": "https://i.postimg.cc/hGT6dsmy/bookimg5.jpg",
+//       "review": "Rowling's enchanting tale of a young wizard's journey into the world of magic is a modern classic. With themes of friendship, courage, and destiny, it captivates readers of all ages.",
+//       "totalPages": 320,
+//       "rating": 4.7,
+//       "category": "Fantasy",
+//       "tags": ["Magic", "Adventure"],
+//       "publisher": "Bloomsbury Publishing",
+//       "yearOfPublishing": 1997
+//     },
+//     {
+//       "bookId": 6,
+//       "bookName": "The Hobbit",
+//       "author": "J.R.R. Tolkien",
+//       "image": "https://i.postimg.cc/5Nyr3bvF/bookimg6.jpg",
+//       "review": "Tolkien's charming adventure takes readers on a journey through Middle-earth, filled with dwarves, dragons, and a reluctant hero. A timeless classic for readers of all ages.",
+//       "totalPages": 300,
+//       "rating": 4.6,
+//       "category": "Fantasy",
+//       "tags": ["Adventure", "Quest"],
+//       "publisher": "Allen & Unwin",
+//       "yearOfPublishing": 1937
+//     }
+//   ]
+  
