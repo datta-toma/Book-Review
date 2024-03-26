@@ -7,7 +7,7 @@ const Banner = () => {
             <div className="text-center space-y-7">
                 <h1 className="text-5xl">Books to freshen up<br></br> your bookshelf</h1>
                 <p>Writing an entire book can be a daunting task, especially for<br></br> new writers. It requires hard work, extreme ambition, and intense discipline.</p>
-                <Link to="/books listed">
+                <Link to="/books-listed">
                 <button className="btn btn-wide bg-[#23BE0A] text-xl text-white mt-4">View The List</button>
                 </Link>
                
