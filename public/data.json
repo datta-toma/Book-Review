@@ -8,7 +8,7 @@
       "totalPages": 328,
       "rating": 4.5,
       "category": "Fiction",
-      "tags": ["Dystopian", "Political"],
+      "tags": [" Dystopian", " Political"],
       "publisher": "Penguin Books",
       "yearOfPublishing": 1949
     },
@@ -21,7 +21,7 @@
       "totalPages": 336,
       "rating": 4.8,
       "category": "Fiction",
-      "tags": ["Coming-of-age", "Legal drama"],
+      "tags": [" Coming-of-age", " Legal drama"],
       "publisher": "J. B. Lippincott & Co.",
       "yearOfPublishing": 1960
     },
@@ -34,7 +34,7 @@
       "totalPages": 180,
       "rating": 4.3,
       "category": "Fiction",
-      "tags": ["Romance", "Tragedy"],
+      "tags": [" Romance", " Tragedy"],
       "publisher": "Charles Scribner's Sons",
       "yearOfPublishing": 1925
     },
@@ -47,7 +47,7 @@
       "totalPages": 224,
       "rating": 4.2,
       "category": "Fiction",
-      "tags": ["Coming-of-age", "Literary"],
+      "tags": [" Coming-of-age", " Literary"],
       "publisher": "Little, Brown and Company",
       "yearOfPublishing": 1951
     },
@@ -60,7 +60,7 @@
       "totalPages": 320,
       "rating": 4.7,
       "category": "Fantasy",
-      "tags": ["Magic", "Adventure"],
+      "tags": [" Magic", " Adventure"],
       "publisher": "Bloomsbury Publishing",
       "yearOfPublishing": 1997
     },
@@ -73,7 +73,7 @@
       "totalPages": 300,
       "rating": 4.6,
       "category": "Fantasy",
-      "tags": ["Adventure", "Quest"],
+      "tags": [" Adventure", " Quest"],
       "publisher": "Allen & Unwin",
       "yearOfPublishing": 1937
     }

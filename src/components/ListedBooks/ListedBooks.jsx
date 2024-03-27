@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, NavLink, useLoaderData, useParams } from "react-router-dom";
+import { Link,  useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -9,13 +9,13 @@ const ListedBooks = () => {
     const books = useLoaderData();
     const {id} = useParams();
     const idInt = parseInt(id);
-    const book = books.find(book => book.id === idInt );
+    const book = books.find((book) => book.id === idInt );
     // console.log(book)
     const [addedToReadList, setAddedToReadList] = useState(false);
 
     const handleReadClick = () => {
         let readList = JSON.parse(localStorage.getItem('readList')) || [];
-        if (readList.some(item => item.id === book.id)) {
+        if (readList.find(item => item.id === book.id)) {
             toast.warning('Book already in Read list');
         } 
          else {
@@ -30,7 +30,7 @@ const ListedBooks = () => {
             toast.warning('Book already added to Read list');
         } else {
             let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-            if (wishlist.some(item => item.id === id)) {
+            if (wishlist.find(item => item.id === id)) {
                 toast.warning('Book already in Wishlist');
             } else {
                 wishlist.push(book);
@@ -57,11 +57,9 @@ const ListedBooks = () => {
                 <h5 className="flex gap-4">Year of Publishing:  <p className="font-bold">{book.yearOfPublishing}</p></h5>
                 <h5 className="flex gap-4">Year of Rating:  <p className="font-bold">{book.rating}</p></h5>
                 <div>
-                    <NavLink to="/books"><button  onClick={handleReadClick} className="btn border-cyan-300 mr-6 font-bold bg-white text-black">Read</button></NavLink>
-                    <NavLink to="/wishlist"><button onClick={handleWishlistClick}  className="btn bg-cyan-300 mr-6 font-bold">Wishlist</button></NavLink>
-                  
-                    {/* <button  onClick={handleReadClick} className="btn border-cyan-300 mr-6 font-bold bg-white text-black">Read</button>
-                    <button onClick={handleWishlistClick}  className="btn bg-cyan-300 mr-6 font-bold">Wishlist</button> */}
+                    
+                    <button  onClick={handleReadClick} className="btn border-cyan-300 mr-6 font-bold bg-white text-black">Read</button>
+                    <button onClick={handleWishlistClick}  className="btn bg-cyan-300 mr-6 font-bold">Wishlist</button> 
 
                     
                 </div>
