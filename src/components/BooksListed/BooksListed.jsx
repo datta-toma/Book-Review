@@ -9,7 +9,7 @@ import { MdOutlineContactPage } from "react-icons/md";
 const BooksListed = () => {
     const [readListData, setReadListData] = useState([]);
     const [wishlistData, setWishlistData] = useState([]);
-    
+    const [sortByField, setSortByField] = useState("");
     
     
     useEffect(() => {
@@ -20,7 +20,21 @@ const BooksListed = () => {
         setWishlistData( wishlist );
     }, []);
     
-
+    const sortByFieldDescending = (field) => {
+        return (a, b) => {
+          if (a[field] < b[field]) return 1;
+          if (a[field] > b[field]) return -1;
+          return 0;
+        };
+      };
+      
+      const handleSort = (field) => {
+        const sortedReadList = [...readListData].sort(sortByFieldDescending(field));
+        const sortedWishlist = [...wishlistData].sort(sortByFieldDescending(field));
+        setReadListData(sortedReadList);
+        setWishlistData(sortedWishlist);
+        setSortByField(field);
+      };
     
 
     return ( 
@@ -32,9 +46,9 @@ const BooksListed = () => {
             <div className="dropdown flex justify-center mt-12 ">
                 <div tabIndex={0} role="button" className="btn m-1 bg-[#23BE0A] text-xl text-white">Sort By <RiArrowDropDownLine className="text-3xl"></RiArrowDropDownLine></div>
                 <ul tabIndex={0} className="dropdown-content z-[1] menu  shadow bg-base-100 rounded-box w-52 mt-14">
-                    <li><a>Rating</a></li>
-                    <li><a>Number of pages</a></li>
-                    <li><a>Publisher year</a></li>
+                    <li onClick={() => handleSort("rating")}><a>Rating</a></li>
+                    <li onClick={() => handleSort("totalPages")}><a>Number of pages</a></li>
+                    <li onClick={() => handleSort("yearOfPublishing")}><a>Publisher year</a></li>
                 </ul>
                 </div>
             </div>

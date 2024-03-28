@@ -7,6 +7,8 @@ const Header = () => {
     className={({isActive, isPending}) => isActive ? "active" : isPending ? "pending" : "" }>Home</NavLink></li>
     <li><NavLink to="/books-listed">Listed Books</NavLink></li>
     <li><NavLink to="/page-read">Pages to Read</NavLink></li>
+    <li><NavLink to="/about">About</NavLink></li>
+    <li><NavLink to="/category">Book Category</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100 max-w-7xl mx-auto mt-10">
