@@ -38,6 +38,7 @@ const PagesToRead = () => {
     return (
         <div className='mt-28'>
             <h2 className="text-2xl font-bold mb-4 text-center">Total Pages for Read List Books</h2>
+            <div className='flex  justify-center mt-6'>
             <BarChart width={800} height={600} data={chartData}>
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="name"   interval={0}  tick={{fontSize: 12}} />
@@ -49,6 +50,7 @@ const PagesToRead = () => {
                     ))}
                 </Bar>
             </BarChart>
+            </div>
         </div>
     );
 };

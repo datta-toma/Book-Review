@@ -7,25 +7,22 @@ import { MdOutlineContactPage } from "react-icons/md";
 
 
 const BooksListed = () => {
-    // const books = useLoaderData();
-    // const [storedBooks, setStoredBooks] = useState([]);
     const [readListData, setReadListData] = useState([]);
     const [wishlistData, setWishlistData] = useState([]);
+    
     
     
     useEffect(() => {
         const readList = JSON.parse(localStorage.getItem('readList')) || [];
         const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
 
-        // const mergedList = readList.concat(wishlist);
-        // const getDefaultData = JSON.parse(localStorage.getItem("books")) || [];
         setReadListData( readList );
         setWishlistData( wishlist );
-          // console.log(storedData);
     }, []);
     
 
     
+
     return ( 
         <div className="max-w-7xl mx-auto mt-10">
             <div className="text-4xl font-extrabold text-center mt-14 bg-gray-100 m-7 p-8 rounded-xl">
@@ -120,11 +117,6 @@ const BooksListed = () => {
             </div>
         </div>
           
-            {/* <ul>
-                {
-                    storedData.map(data => <li key={data.id}>{data.bookName}</li>)
-                }
-            </ul> */}
         </div>
     );
 };
