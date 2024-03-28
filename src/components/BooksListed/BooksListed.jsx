@@ -66,7 +66,7 @@ const BooksListed = () => {
                                 <div className="py-1">
                                 <button className="btn btn-primary bg-[#cadef7]  text-sky-500 border-indigo-300 rounded-2xl mr-6">Category: {book.category}</button>
                                 <button className="btn btn-primary bg-[#f6ce92] text-orange-500 border-orange-400 rounded-2xl mr-6">Rating: {book.rating}</button>
-                                <Link to={"/books-listed"}>
+                                <Link to={`/book/${book.id}`}>
                                 <button className="btn btn-success bg-[#23BE0A]  text-white rounded-2xl mr-6">View Details</button>
                                 </Link>
                                 
@@ -104,7 +104,7 @@ const BooksListed = () => {
                                 <div className="py-1">
                                 <button className="btn btn-primary bg-[#cadef7]  text-sky-500 border-indigo-300 rounded-2xl mr-6">Category: {book.category}</button>
                                 <button className="btn btn-primary bg-[#f6ce92] text-orange-500 border-orange-400 rounded-2xl mr-6">Rating: {book.rating}</button>
-                                <Link to={"/books-listed"}>
+                                <Link to={`/book/${book.id}`}>
                                 <button className="btn btn-success bg-[#23BE0A]  text-white rounded-2xl mr-6">View Details</button>
                                 </Link>
                                 </div>

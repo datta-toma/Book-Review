@@ -57,7 +57,7 @@ const ListedBooks = () => {
                 <h5 className="flex gap-4">Year of Publishing:  <p className="font-bold">{book.yearOfPublishing}</p></h5>
                 <h5 className="flex gap-4">Year of Rating:  <p className="font-bold">{book.rating}</p></h5>
                 <div>
-                    
+                                          
                     <button  onClick={handleReadClick} className="btn border-cyan-300 mr-6 font-bold bg-white text-black">Read</button>
                     <button onClick={handleWishlistClick}  className="btn bg-cyan-300 mr-6 font-bold">Wishlist</button> 
 
